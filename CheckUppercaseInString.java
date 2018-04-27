@@ -16,5 +16,6 @@ class CheckUppercaseInString{
 				returnValue+="_"; 
 			returnValue+=c;
 		}
+		return returnValue.toUpperCase();
 	}
 }
