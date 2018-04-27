@@ -12,7 +12,7 @@ class CheckUppercaseInString{
 		char[] propertyNameInCharArray=propertyName.toCharArray();
 		String returnValue="";
 		for(int i=0;i<propertyNameInCharArray.length;i++){
-			if(propertyNameInCharArray[i]>=65&&propertyNameInCharArray[i]<=91) //ascii value in between 65 and 91 is A to Z
+			if(Character.isUpperCase(propertyNameInCharArray[i])) //ascii value in between 65 and 91 is A to Z
 				returnValue+="_"; 
 			returnValue+=propertyNameInCharArray[i];
 		}
